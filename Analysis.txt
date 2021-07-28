@@ -1,0 +1,6 @@
+I analyzed how the initial structure of the solution would be. 
+
+I created the projects and classes that would be added, then I used a way to load information through the use of a .json file, this to load information outside the application code.
+ 
+I created domain models to validate the information that would enter the system and finally i applied the search logic of words according to the requirement.
+
