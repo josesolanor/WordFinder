@@ -1,5 +1,6 @@
 ﻿using Application;
 using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 namespace Domain
@@ -7,14 +8,14 @@ namespace Domain
     public class Matrix
     {
         private readonly Validations _validations = new Validations();
-        public string[] Source { get; private set; }
+        public List<string> Source { get; private set; }
 
-        public Matrix(string[] source)
+        public Matrix(List<string> source)
         {
             this.ValidatedSource(source);
         }
 
-        public void ValidatedSource(string[] source)
+        public void ValidatedSource(List<string> source)
         {
             var stringSource = string.Join(string.Empty, source);
 

@@ -12,14 +12,14 @@ namespace Application
             return Regex.IsMatch(value.ToLower(), "^[a-z]+$");
         }
 
-        public bool MaxSize(string[] value)
+        public bool MaxSize(List<string> value)
         {
-            if (value.Length > 64)
+            if (value.Count > 64)
             {
                 return false;
             }
 
-            for (int i = 0; i < value.Length; i++)
+            for (int i = 0; i < value.Count; i++)
             {
                 if (value[i].Length > 64)
                 {

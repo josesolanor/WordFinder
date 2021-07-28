@@ -9,14 +9,14 @@ namespace Domain
     public class Dictionary
     {
         private readonly Validations _validations = new Validations();
-        public string[] Source { get; private set; }
+        public List<string> Source { get; private set; }
 
-        public Dictionary(string[] source)
+        public Dictionary(List<string> source)
         {
             this.ValidatedSource(source);
         }
 
-        public void ValidatedSource(string[] source)
+        public void ValidatedSource(List<string> source)
         {
             var stringSource =  string.Join(string.Empty, source);
 
